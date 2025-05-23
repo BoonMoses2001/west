@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: westcoast-digital-denture
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SESSION_SECRET
+        generateValue: true

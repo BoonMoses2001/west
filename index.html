@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestCoast Digital Denture and Implant Center - Advanced Denture Solutions</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Neural Network Background -->
+    <div class="neural-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top neural-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="{{ url_for('static', filename='images/westcoast-logo.jpg') }}" alt="WestCoast Digital Denture" height="60" class="me-3 logo-img">
+                <span class="brand-text">WestCoast Digital</span>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#procedures">Procedures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technology">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="neural-text">WestCoast</span> Digital<br>
+                            <span class="gradient-text">Denture & Implant Center</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Experience the future of dental restoration with our advanced, 
+                            precision-engineered denture systems designed for optimal comfort and function.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#procedures" class="btn btn-neural btn-lg me-3">Explore Procedures</a>
+                            <a href="#contact" class="btn btn-outline-neural btn-lg">Schedule Consultation</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="neural-orbit">
+                            <div class="orbit-ring"></div>
+                            <div class="orbit-ring"></div>
+                            <div class="orbit-ring"></div>
+                            <div class="neural-core">
+                                <i class="fas fa-tooth"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Procedures Section -->
+    <section id="procedures" class="procedures-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Advanced Denture Procedures</h2>
+                    <p class="section-subtitle">Precision-engineered solutions for every dental restoration need</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- All-on-X Implants -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="procedure-card" data-procedure="all-on-x">
+                        <div class="card-header">
+                            <div class="procedure-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>All-on-X Implants</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Revolutionary full-arch restoration using minimal implants for maximum stability and comfort.</p>
+                            <ul class="procedure-features">
+                                <li><i class="fas fa-check"></i> Immediate function</li>
+                                <li><i class="fas fa-check"></i> Minimal invasive</li>
+                                <li><i class="fas fa-check"></i> Long-lasting results</li>
+                            </ul>
+                            <div class="procedure-stats">
+                                <div class="stat">
+                                    <span class="stat-number">98%</span>
+                                    <span class="stat-label">Success Rate</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">1 Day</span>
+                                    <span class="stat-label">Procedure</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/all-on-x" class="btn btn-neural w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partial Dentures -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="procedure-card" data-procedure="partial">
+                        <div class="card-header">
+                            <div class="procedure-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <h3>Partial Dentures</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Precision-crafted partial solutions that seamlessly integrate with your natural teeth.</p>
+                            <ul class="procedure-features">
+                                <li><i class="fas fa-check"></i> Natural appearance</li>
+                                <li><i class="fas fa-check"></i> Comfortable fit</li>
+                                <li><i class="fas fa-check"></i> Easy maintenance</li>
+                            </ul>
+                            <div class="procedure-stats">
+                                <div class="stat">
+                                    <span class="stat-number">95%</span>
+                                    <span class="stat-label">Satisfaction</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">2-3 Weeks</span>
+                                    <span class="stat-label">Timeline</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/partial-dentures" class="btn btn-neural w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Dentures -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="procedure-card" data-procedure="full">
+                        <div class="card-header">
+                            <div class="procedure-icon">
+                                <i class="fas fa-smile-beam"></i>
+                            </div>
+                            <h3>Full Dentures</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Complete oral restoration with advanced materials and digital precision fitting.</p>
+                            <ul class="procedure-features">
+                                <li><i class="fas fa-check"></i> Digital impressions</li>
+                                <li><i class="fas fa-check"></i> Custom fit</li>
+                                <li><i class="fas fa-check"></i> Enhanced stability</li>
+                            </ul>
+                            <div class="procedure-stats">
+                                <div class="stat">
+                                    <span class="stat-number">92%</span>
+                                    <span class="stat-label">Retention</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">4-6 Weeks</span>
+                                    <span class="stat-label">Process</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/full-dentures" class="btn btn-neural w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="tech-content">
+                        <h2 class="section-title">Neural-Precision Technology</h2>
+                        <p class="tech-description">
+                            Our advanced diagnostic and manufacturing systems ensure unprecedented 
+                            accuracy and comfort in every denture solution we create.
+                        </p>
+                        
+                        <div class="tech-features">
+                            <div class="tech-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>AI-Assisted Design</h4>
+                                    <p>Machine learning algorithms optimize fit and function</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>3D Precision Manufacturing</h4>
+                                    <p>Digital workflows ensure perfect precision every time</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Advanced Materials</h4>
+                                    <p>Biocompatible materials for long-lasting comfort</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="tech-visual">
+                        <div class="neural-network">
+                            <svg width="100%" height="400" viewBox="0 0 400 400">
+                                <defs>
+                                    <radialGradient id="nodeGradient" cx="50%" cy="50%" r="50%">
+                                        <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0099cc;stop-opacity:0.3" />
+                                    </radialGradient>
+                                </defs>
+                                
+                                <!-- Neural connections -->
+                                <g class="neural-connections">
+                                    <line x1="100" y1="100" x2="200" y2="150" class="neural-line" />
+                                    <line x1="100" y1="200" x2="200" y2="150" class="neural-line" />
+                                    <line x1="100" y1="300" x2="200" y2="250" class="neural-line" />
+                                    <line x1="200" y1="150" x2="300" y2="100" class="neural-line" />
+                                    <line x1="200" y1="150" x2="300" y2="200" class="neural-line" />
+                                    <line x1="200" y1="250" x2="300" y2="200" class="neural-line" />
+                                    <line x1="200" y1="250" x2="300" y2="300" class="neural-line" />
+                                </g>
+                                
+                                <!-- Neural nodes -->
+                                <g class="neural-nodes">
+                                    <circle cx="100" cy="100" r="8" class="neural-node" />
+                                    <circle cx="100" cy="200" r="8" class="neural-node" />
+                                    <circle cx="100" cy="300" r="8" class="neural-node" />
+                                    <circle cx="200" cy="150" r="10" class="neural-node active" />
+                                    <circle cx="200" cy="250" r="10" class="neural-node active" />
+                                    <circle cx="300" cy="100" r="8" class="neural-node" />
+                                    <circle cx="300" cy="200" r="8" class="neural-node" />
+                                    <circle cx="300" cy="300" r="8" class="neural-node" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Connect With Our Neural Network</h2>
+                    <p class="section-subtitle">Ready to transform your smile with precision denture solutions?</p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Call Us</h4>
+                                <p>(555) NEURA-DENT</p>
+                                <p>(555) 638-7233</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>info@neuradent.com</p>
+                                <p>consult@neuradent.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Location</h4>
+                                <p>123 Neural Plaza</p>
+                                <p>Innovation District, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Hours</h4>
+                                <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                                <p>Sat: 9:00 AM - 3:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-5">
+                        <a href="#" class="btn btn-neural btn-lg">Schedule Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-brand">
+                        <img src="{{ url_for('static', filename='images/westcoast-logo.jpg') }}" alt="WestCoast Digital Denture" height="40" class="me-3">
+                        <span>WestCoast Digital Denture and Implant Center</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links">
+                        <a href="#" class="me-3">Privacy Policy</a>
+                        <a href="#" class="me-3">Terms of Service</a>
+                        <a href="#">Medical Disclaimer</a>
+                    </div>
+                    <div class="mt-2">
+                        <small>&copy; 2024 NeuraDent. All rights reserved.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
